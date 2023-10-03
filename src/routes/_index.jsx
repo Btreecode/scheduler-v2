@@ -1,3 +1,3 @@
 export default function Index() {
-  return <div>Main Landing Page</div>;
+  return <div>We are Math Olympiad</div>;
 }
