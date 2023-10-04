@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout/layout";
 import { ROUTES } from "./data/routes";
+import "./styles.css";
 
 // --------------------------
 

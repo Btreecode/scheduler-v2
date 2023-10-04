@@ -2,3 +2,31 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.aboutUs {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutUsContent {
+  text-align: center;
+}
+
+.aboutUsHeader {
+  text-align: center;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.w-profile {
+  width: 500px;
+}
+
+a[href^="https"] {
+  color: cornflowerblue;
+}

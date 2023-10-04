@@ -3,7 +3,7 @@ import { ROUTES } from "../data/routes";
 
 export default function Navbar() {
   return (
-    <div className="w-full flex justify-center bg-base-200">
+    <div className="w-full flex justify-center bg-base-200 mb-5">
       <div className="navbar max-w-6xl">
         <div className="navbar-start">
           <div className="dropdown">
@@ -39,8 +39,8 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {ROUTES.map((r) => (
+          <ul className="menu menu-horizontal px-0.5 mx-0.5">
+            {ROUTES.filter(r => r.title).map((r) => (
               <li key={r.title}>
                 <Link to={r.path}>{r.title}</Link>
               </li>
@@ -50,10 +50,10 @@ export default function Navbar() {
         <div className="navbar-end gap-2">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
+              <div className="w-11 rounded-full">
                 <img
-                  alt="propic"
-                  src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80"
+                  alt="logo"
+                  src="https://wallpapers.com/images/hd/cool-star-wallpaper-image-hd-wallpaper-android-abpx-4wbzak7jlvpn1bxx.jpg"
                 />
               </div>
             </label>
@@ -62,7 +62,7 @@ export default function Navbar() {
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link>Profile</Link>
+                <Link to="/profile">Profile</Link>
               </li>
               <li>
                 <Link>Settings</Link>
