@@ -35,7 +35,7 @@ export default function Navbar() {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            TITLE
+            NHS Math Olympiad
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
