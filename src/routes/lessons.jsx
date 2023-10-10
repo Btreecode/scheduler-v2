@@ -1,4 +1,4 @@
-export default function Links() {
+export default function Lessons() {
   return <div>
     <div>
       <div class="font-bold mb-2">Past Lessons</div>

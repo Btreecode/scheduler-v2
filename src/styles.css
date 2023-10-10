@@ -3,24 +3,49 @@
   text-align: center;
 }
 
-.aboutUs {
-  margin-top: 20px;
-  border: 1px solid black;
-  width: 500px;
-  height: 500px;
+.sampleQuestions {
+  width: 300px;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color:#f7f7f7;
 }
 
-.aboutUsContent {
-  text-align: center;
+.sampleQuestions > .Header {
+  text-align: left;
+  background-color: transparent;
+  padding: 0;
+}
+.sampleQuestions > .Content {
+  margin: 15px;
 }
 
-.aboutUsHeader {
-  text-align: center;
+.latestAnnouncement {
+  /* border: 1px solid black; */
+  padding: 2px;
+  width: 700px;
+  height: 100px;
+}
+
+.aboutUs {
+  margin-top: 20px;
+  /* border: 1px solid black; */
+  width: 700px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Content {
+  margin: 5px 0 0 15px;
+}
+
+.Header {
+  padding: 5px;
+  background-color:#FCF8E3;
+  font-size: 25px;
   font-weight: bold;
-  margin: 5px 0px;
+  margin: 5px 0;
 }
 
 .w-profile {
