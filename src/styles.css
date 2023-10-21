@@ -27,6 +27,19 @@
   height: 100px;
 }
 
+.puzzles {
+  width: 800px;
+}
+
+.table {
+  width: 800px;
+}
+
+.hv > tr:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));		
+}
+
 .aboutUs {
   margin-top: 20px;
   /* border: 1px solid black; */

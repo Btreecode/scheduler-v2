@@ -48,15 +48,15 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="navbar-end gap-2">
-          <div className="dropdown dropdown-end">
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-11 rounded-full">
-                <img
-                  alt="logo"
-                  src="https://wallpapers.com/images/hd/cool-star-wallpaper-image-hd-wallpaper-android-abpx-4wbzak7jlvpn1bxx.jpg"
-                />
-              </div>
+          <div className="dropdown dropdown-end flex">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar flex-1">
+              <img
+                alt="logo"
+                src="https://wallpapers.com/images/hd/cool-star-wallpaper-image-hd-wallpaper-android-abpx-4wbzak7jlvpn1bxx.jpg"
+                className="w-11 rounded-full inline"
+              />
             </label>
+            <div className="flex-1">name</div>
             <ul
               tabIndex={0}
               className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"

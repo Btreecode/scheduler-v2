@@ -1,5 +1,5 @@
 export default function footer() {
-    return <div class="w-full">
+    return <div class="w-full mt-8">
         <footer class="footer items-center p-4 bg-base-200 text-neutral-content">
         <aside class="items-center grid-flow-col">
             <a href=".."><img src="https://live.staticflickr.com/65535/53261951788_e956111c32_m.jpg" alt="NHS Math Olympiad Logo" class="w-9 h-9 rounded-3xl" /></a>
