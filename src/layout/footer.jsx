@@ -6,7 +6,7 @@ export default function footer() {
           <a target="_blank" href="..">
             <img
               src="https://live.staticflickr.com/65535/53261951788_e956111c32_m.jpg"
-              alt="NHS Math Olympiad Logo"
+              alt="NHS Logo"
               className="w-9 h-9 rounded-3xl"
             />
           </a>
