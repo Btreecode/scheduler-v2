@@ -1,34 +1,20 @@
+import { Link } from "react-router-dom";
+import TableRow from "./tablerow.jsx"
 export default function Announcements() {
     return <div className="flex">
         <div class="overflow-x-auto table">
-            <table class="table">
+            <table class="table w-max">
                 <thead>
                     <tr>
                         <th>Date</th>
                         <th>Topic</th>
                         <th>Title</th>
-                        <th>Number of Comments</th>
+                        <th>Username</th>
                     </tr>
                 </thead>
                 <tbody class="hv">
-                    <tr>
-                        <th>2023.10.20</th>
-                        <td>Cy Ganderton</td>
-                        <td>Quality Control Specialist</td>
-                        <td>Blue</td>
-                    </tr>
-                    <tr>
-                        <th>2023.10.20</th>
-                        <td>Hart Hagerty</td>
-                        <td>Desktop Support Technician</td>
-                        <td>Purple</td>
-                    </tr>
-                    <tr>
-                        <th>2023.10.19</th>
-                        <td>Brice Swyre</td>
-                        <td>Tax Accountant</td>
-                        <td>Red</td>
-                    </tr>
+                    <TableRow date="2023.10.20" topic="Puzzle" title="Sudoku" username="Chris Di Antonio"/>
+                    <TableRow date="2023.10.23" topic="AMC" title="AMC 12B" username="Min.lim07"/>
                 </tbody>
             </table>
         </div>

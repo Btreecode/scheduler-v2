@@ -12,7 +12,7 @@ export default function Profile() {
         <div class="flex items-center">
           <img
             class="w-14 h-14 rounded-full ml-4"
-            src="https://wallpapers.com/images/hd/cool-star-wallpaper-image-hd-wallpaper-android-abpx-4wbzak7jlvpn1bxx.jpg"
+            src={user.img}
             alt="Profile Picture"
           />
           <div class="px-4 py-5 sm:px-6">

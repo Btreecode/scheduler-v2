@@ -1,7 +1,7 @@
 export default function Puzzles() {
   return (
     <div className="puzzles">
-      <div className="bg-primary text-2xl font-bold p-5">Puzzles</div>
+      <div className="bg-purple-200 text-2xl font-bold p-5">Puzzles</div>
       <div class="flex justify-between mt-5">
         <div class="collapse bg-base-200 w-96">
           <div class="collapse-title text-xl font-bold">

@@ -57,7 +57,7 @@ export default function Navbar() {
           {user ? (
             <div className="dropdown dropdown-end flex">
               <div className="flex items-center space-x-2">
-                <div className="font-bold">{user.name}</div>
+                <div className="font-bold mr-3">{user.name}</div>
                 <label
                   tabIndex={0}
                   className="btn btn-ghost btn-circle avatar flex-1"
@@ -75,9 +75,6 @@ export default function Navbar() {
               >
                 <li>
                   <Link to="/profile">Profile</Link>
-                </li>
-                <li>
-                  <Link>Settings</Link>
                 </li>
                 <li>
                   <button onClick={() => setUser(undefined)}>Logout</button>
@@ -102,7 +99,7 @@ function SignIn({ close }) {
   function onSubmit(ev) {
     ev.preventDefault();
     setUser({
-      img: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=2564&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      img: "https://img.pikbest.com/backgrounds/20191105/cool-planet-texture-background-image_2844004.jpg!sw800",
       name: "Min Lim",
       username: "Min.Lim07",
       grade: "11th",

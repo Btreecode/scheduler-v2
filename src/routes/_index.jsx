@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <div className="flex flex-col gap-4">
       <div className="aboutUs">
-        <div className="bg-primary text-2xl font-bold p-5">ABOUT US</div>
+        <div className="text-2xl font-bold p-3 bg-purple-200">ABOUT US</div>
         <div className="Content py-2">
           Hello T-Wolves! We are the Northwood High School Math Olympiad Club.
           We support our students through providing fun activities and
@@ -24,33 +24,13 @@ export default function Index() {
         </div>
       </div>
       <div className="latestAnnouncement">
-        <div className="bg-neutral text-xl font-bold p-3">
+        <div className="bg-purple-200 text-xl font-bold p-3">
           Latest Announcement
         </div>
         <div className="Content py-2">variable: last announcement</div>
       </div>
-      <div className="flex justify-between">
-        <div className="collapse bg-base-200 w-80">
-          <input type="checkbox" onChange={onChange1} />
-          <div className="collapse-title text-xl font-bold">
-            Puzzle of the Week
-          </div>
-          <div className="ml-5 mb-5">
-            <p>Last Week Answer: </p>
-          </div>
-        </div>
-        <div className="collapse bg-base-200 w-80">
-          <input type="checkbox" onChange={onChange2} />
-          <div className="collapse-title text-xl font-bold">
-            Lesson of the Week
-          </div>
-          <div className="ml-5 mb-5">
-            <p>Topic: </p>
-          </div>
-        </div>
-      </div>
       <div className="flex flex-col mt-3">
-        <div className="bg-neutral text-xl font-bold p-3">Important Links</div>
+        <div className="bg-purple-200 text-xl font-bold p-3">Important Links</div>
         <ul className="list-disc ml-11 mt-3">
           <li>
             <a
