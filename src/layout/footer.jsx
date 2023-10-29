@@ -3,9 +3,9 @@ export default function footer() {
     <div className="w-full mt-8">
       <footer className="footer items-center p-4 bg-base-200">
         <aside className="items-center grid-flow-col">
-          <a target="_blank" href="..">
+          <a target="_blank" href="https://northwoodhigh.iusd.org/">
             <img
-              src="https://live.staticflickr.com/65535/53261951788_e956111c32_m.jpg"
+              src="https://static.hudl.com/users/temp/3744584_ced4e9be82f441548663bb50f9e26fac.jpg"
               alt="NHS Logo"
               className="w-9 h-9 rounded-3xl"
             />
