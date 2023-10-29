@@ -4,6 +4,7 @@ import Puzzles from "../routes/puzzles";
 import Lessons from "../routes/lessons";
 import Posts from "../routes/posts";
 import Profile from "../routes/profile";
+import Announcement from "../routes/announcement";
 
 const ROUTES = [
   { path: "/", title: undefined, element: <Index /> },
@@ -11,7 +12,8 @@ const ROUTES = [
   { path: "/announcements", title: "Announcements", element: <Announcements /> },
   { path: "/lessons", title: "Lessons", element: <Lessons /> },
   { path: "/puzzles", title: "Puzzles", element: <Puzzles /> },
-  { path: "/profile", title: undefined, element: <Profile /> }
+  { path: "/profile", title: undefined, element: <Profile /> },
+  { path: "/announcement", title: undefined, element: <Announcement />}
 ];
 
 export { ROUTES };

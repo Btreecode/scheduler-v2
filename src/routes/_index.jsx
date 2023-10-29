@@ -27,7 +27,7 @@ export default function Index() {
         <div className="bg-purple-200 text-xl font-bold p-3">
           Latest Announcement
         </div>
-        <div className="Content py-2">variable: last announcement</div>
+        <div className="Content py-2">3 days left for AMC registration! Registration window closes at November 1st!</div>
       </div>
       <div className="flex flex-col mt-3">
         <div className="bg-purple-200 text-xl font-bold p-3">Important Links</div>
@@ -49,19 +49,13 @@ export default function Index() {
             </a>
           </li>
           <li>
-            <a target="_blank" href="www.google.com">
-              Ask Questions - did not make link yet
+            <a target="_blank" href="https://northwood.myschoolcentral.com/(S(s1axgspyckxu3a2fttcvdhzi))/Index.aspx#/15053/123">
+              AMC Purchase Link
             </a>
           </li>
           <li>
-            <a target="_blank" href="www.google.com">
-              Merch Purchase Link - need to connect link
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="www.google.com">
-              Meeting Dates [shows which dates we don't meet] - need to make
-              link
+            <a target="_blank" href="https://www.youtube.com/">
+              Merch Purchase Link
             </a>
           </li>
         </ul>

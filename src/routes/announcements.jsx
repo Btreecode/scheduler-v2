@@ -13,7 +13,7 @@ export default function Announcements() {
                     </tr>
                 </thead>
                 <tbody class="hv">
-                    <TableRow date="2023.10.20" topic="Puzzle" title="Sudoku" username="Chris Di Antonio"/>
+                    <TableRow date="2023.10.20" topic="Puzzle" title="Sudoku" username="Chris Di Antonio" link="./announcement"/>
                     <TableRow date="2023.10.23" topic="AMC" title="AMC 12B" username="Min.lim07"/>
                 </tbody>
             </table>

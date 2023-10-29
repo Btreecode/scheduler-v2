@@ -1,9 +1,9 @@
 const POSTS = [
   {
     id: 1,
-    title: "1st Place Finish 🎉",
+    title: "1st Place in Orange County 🎉",
     content:
-      "Congratulations for placing 1st in the recent Math Olympiad! Let's keep up the good work :)",
+      "Congratulations for placing 1st in the first CAML! Let's keep up the good work :)",
     author: "Mr. Di Antonio",
     date: "October 27th, 2023",
   },
