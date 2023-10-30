@@ -5,7 +5,7 @@ export default function Announcement() {
             <div class="card-body">
                 <h2 class="card-title">
                     Sudoku
-                    <div class="badge badge-primary">2023.10.20</div>
+                    <div class="badge badge-primary">2023.10.27</div>
                 </h2>
                 <p>Fill in the missing boxes!</p>
                 <div class="card-actions justify-end">
