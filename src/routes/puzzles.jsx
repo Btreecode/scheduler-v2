@@ -30,11 +30,11 @@ export default function Puzzles() {
           </div>
         </div>
       </div>
-      <div className="mt-6 font-bold flex flex-col">
-        <a target="_blank" href="">
+      <div className="mt-8 font-bold flex flex-col gap-3">
+        <a target="_blank" href="https://www.youtube.com">
           Puzzle Suggestion Form
         </a>
-        <a target="_blank" href="">
+        <a target="_blank" href="https://www.youtube.com">
           Puzzle Answer Sumbission Form
         </a>
       </div>
