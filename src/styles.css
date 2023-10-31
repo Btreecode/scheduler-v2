@@ -11,7 +11,7 @@
   height: 200px;
   display: flex;
   flex-direction: column;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .sampleQuestions > .Header {
@@ -34,7 +34,7 @@
   width: 800px;
 }
 
-.table {
+.table-1 {
   width: 800px;
 }
 
@@ -58,7 +58,7 @@
 
 .Header {
   padding: 5px;
-  background-color:#FCF8E3;
+  background-color: #fcf8e3;
   font-size: 25px;
   font-weight: bold;
   margin: 5px 0;
@@ -69,7 +69,11 @@ li:not(:last-child) {
 }
 
 .grad1 {
-  fill: linear-gradient(rgb(176, 77, 241), rgba(255, 0, 242, 0.699), rgb(255, 217, 90));
+  fill: linear-gradient(
+    rgb(176, 77, 241),
+    rgba(255, 0, 242, 0.699),
+    rgb(255, 217, 90)
+  );
 }
 
 .w-profile {
