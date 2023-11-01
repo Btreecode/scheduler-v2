@@ -1,6 +1,8 @@
 import TableRow from "./tablerow.jsx";
 export default function Announcements() {
   return (
+  <div>
+    <div class="font-bold text-2xl bg-purple-200 align-middle p-5 mb-4">Announcements</div>
     <div className="flex">
       <div class="overflow-x-auto table">
         <table class="table-1 w-max">
@@ -30,5 +32,6 @@ export default function Announcements() {
         </table>
       </div>
     </div>
+  </div>
   );
 }

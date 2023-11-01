@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <div className="flex flex-col gap-4">
       <div className="aboutUs">
-        <div className="text-2xl font-bold p-3 bg-purple-200">ABOUT US</div>
+        <div className="text-2xl font-bold p-5 bg-purple-200">ABOUT US</div>
         <div className="Content py-2">
           Hello T-Wolves! We are the Northwood High School Math Olympiad Club.
           We support our students through providing fun activities and
@@ -24,14 +24,14 @@ export default function Index() {
         </div>
       </div>
       <div className="latestAnnouncement">
-        <div className="bg-purple-200 text-xl font-bold p-3">
+        <div className="bg-purple-200 text-2xl font-bold p-3">
           Latest Announcement
         </div>
         <div className="Content py-2">3 days left for AMC registration! Registration window closes at November 1st!</div>
       </div>
-      <div className="flex flex-col mt-3">
-        <div className="bg-purple-200 text-xl font-bold p-3">Important Links</div>
-        <ul className="list-disc ml-11 mt-3">
+      <div className="flex flex-col mt-4">
+        <div className="bg-purple-200 text-2xl font-bold p-3">Important Links</div>
+        <ul className="list-disc ml-11 mt-4">
           <li>
             <a
               target="_blank"

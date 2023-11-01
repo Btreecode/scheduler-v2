@@ -13,7 +13,7 @@ export default function Puzzles() {
             />
           </div>
           <div className="ml-5 mb-5">
-            <p>Lv. 1 [5 points]</p>
+            <p>Lv. 1 [1 point]</p>
           </div>
         </div>
         <div className="collapse bg-base-200 w-96">
@@ -26,7 +26,7 @@ export default function Puzzles() {
             />
           </div>
           <div className="ml-5 mb-5">
-            <p>Lv. 2 [10 points]</p>
+            <p>Lv. 2 [2 points]</p>
           </div>
         </div>
       </div>

@@ -10,8 +10,8 @@ export default function Navbar() {
 
   return (
     <div className="w-full flex justify-center bg-base-200 mb-5 relative">
-      <div className="navbar max-w-6xl">
-        <div className="navbar-start">
+      <div className="navbar w-navbar">
+        <div className="navbar-start mr-6">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle lg:hidden">
               <svg
@@ -45,7 +45,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-0.5 mx-0.5">
+          <ul className="menu menu-horizontal px-0.5">
             {ROUTES.filter((r) => r.title).map((r) => (
               <li key={r.title}>
                 <Link to={r.path}>{r.title}</Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <div className="navbar-end gap-2">
+        <div className="navbar-end gap-2 mr-48">
           {user ? (
             <div className="dropdown dropdown-end flex">
               <div className="flex items-center space-x-2">
