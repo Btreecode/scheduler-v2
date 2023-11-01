@@ -2,7 +2,7 @@ import { LAST_VISITS, LEADERS } from "../data/leader-board";
 
 export default function SideMenu() {
   return (
-    <div className="p-3 bg-base-200 pl-5">
+    <div className="p-3 bg-base-200 pl-5 w-side">
       <Leaders />
       <LatestVitis />
     </div>
