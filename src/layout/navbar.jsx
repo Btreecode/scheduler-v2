@@ -41,7 +41,7 @@ export default function Navbar() {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            NHS Math Olympiad
+            Min's Scheduler
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -102,11 +102,7 @@ function SignIn({ close }) {
       img: "https://img.pikbest.com/backgrounds/20191105/cool-planet-texture-background-image_2844004.jpg!sw800",
       name: "Min Lim",
       username: "Min.Lim07",
-      grade: "11th",
-      position: "Treasurer",
-      email: "readbug.lim@gmail.com",
-      interest: "Fun Math Puzzles",
-      joined: `Oct 2nd 2023`,
+      email: "smth@gmail.com",
     });
     close();
   }

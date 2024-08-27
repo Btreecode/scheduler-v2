@@ -20,7 +20,7 @@ export default function Profile() {
               {user.username}
             </h3>
             <p class="mt-1 max-w-2xl text-sm text-gray-500 w-profile">
-              Joined {user.joined}
+              sm sort of description
             </p>
           </div>
         </div>
@@ -33,27 +33,15 @@ export default function Profile() {
               </dd>
             </div>
             <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt class="text-sm font-medium text-gray-500">Grade</dt>
+              <dt class="text-sm font-medium text-gray-500">Username</dt>
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {user.grade}
+                {user.username}
               </dd>
             </div>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt class="text-sm font-medium text-gray-500">Position</dt>
-              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {user.position}
-              </dd>
-            </div>
-            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
               <dt class="text-sm font-medium text-gray-500">Email</dt>
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
                 {user.email}
-              </dd>
-            </div>
-            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt class="text-sm font-medium text-gray-500">Interest</dt>
-              <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                {user.interest}
               </dd>
             </div>
           </dl>
