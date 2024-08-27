@@ -40,7 +40,7 @@ function Leaders() {
             <tr>
               <th>#</th>
               <th>name</th>
-              <th>points</th>
+              <th># of hrs available</th>
             </tr>
           </thead>
           <tbody>
