@@ -1,4 +1,4 @@
-import { LAST_VISITS, LEADERS } from "../data/leader-board";
+import { LEADERS } from "../data/leader-board";
 
 export default function SideMenu() {
   return (

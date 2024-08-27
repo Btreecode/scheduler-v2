@@ -23,17 +23,6 @@
   margin: 15px;
 }
 
-.latestAnnouncement {
-  /* border: 1px solid black; */
-  padding: 2px;
-  width: 800px;
-  height: 100px;
-}
-
-.puzzles {
-  width: 800px;
-}
-
 .w-side {
   width: 500px;
 }
@@ -49,12 +38,6 @@
 .hv > tr:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-}
-
-.aboutUs {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
 }
 
 .Content {
@@ -87,4 +70,16 @@ li:not(:last-child) {
 
 a[href^="https"] {
   color: cornflowerblue;
+}
+
+.tableRow {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tableRow > th {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
 }
