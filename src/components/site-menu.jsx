@@ -11,27 +11,25 @@ export default function SideMenu() {
 function Leaders() {
   return (
     <div>
-      <a href="./leaderboard">
-        <h1 className="font-bold text-xl mt-4 mb-2">Leaderboard</h1>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>name</th>
-              <th># of hrs available</th>
+      <h1 className="font-bold text-xl mt-4 mb-2">Leaderboard</h1>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th># of hrs available</th>
+          </tr>
+        </thead>
+        <tbody>
+          {LEADERS.map((leader, i) => (
+            <tr key={i}>
+              <td>{i + 1}</td>
+              <td>{leader.name}</td>
+              <td>{leader.points}</td>
             </tr>
-          </thead>
-          <tbody>
-            {LEADERS.map((leader, i) => (
-              <tr key={i}>
-                <td>{i + 1}</td>
-                <td>{leader.name}</td>
-                <td>{leader.points}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </a>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

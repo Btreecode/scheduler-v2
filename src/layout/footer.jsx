@@ -1,21 +1,21 @@
 export default function footer() {
   return (
     <div className="w-full mt-8">
-      <footer className="footer items-center p-4 bg-base-200">
+      <footer className="footer items-center p-3 bg-base-200 pl-6">
         <aside className="items-center grid-flow-col">
           <a target="_blank" href="..">
             <img
-              src="https://static.hudl.com/users/temp/3744584_ced4e9be82f441548663bb50f9e26fac.jpg"
+              src="https://i.imgur.com/ZflavaZ.png"
               alt="App icon"
-              className="w-9 h-9 rounded-3xl"
+              className="w-11 h-11 rounded-3xl mr-1"
             />
           </a>
           <p>
             Copyright©{" "}
-            <a target="_blank" href=".." className="underline">
+            <a target="_blank" href=".." className="underline ml-1">
               Min's Scheduler
             </a>{" "}
-            - All rights reserved
+            — All rights reserved
           </p>
         </aside>
       </footer>
