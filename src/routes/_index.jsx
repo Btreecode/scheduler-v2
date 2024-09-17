@@ -17,7 +17,7 @@ export default function Index() {
             </tr>
           </thead>
           <tbody>
-            {DATES.map((v, i) => (<TableRow date={v} />))}
+            <tr>{DATES.map((v, i) => (<TableRow time={v} number={i} />))}</tr>
           </tbody>
         </table>
       </div>
@@ -25,10 +25,10 @@ export default function Index() {
   );
 }
 
-function TableRow({date}) {
+function TableRow({time, number}) {
   return(
-    <tr>
-      <td>{date}</td>
-    </tr>
+    <td>
+      <button id={number} onClick={() => alert("add the feature for adding time to availability list")}>{time}</button>
+    </td>
   );
 }
