@@ -31,8 +31,8 @@ export default function Navbar() {
             Min's Scheduler
           </Link>
         </div>
-        <button className= "btn btn-neutral text-s" style={{marginRight: "182px"}} onClick={() => setJoinCode(true)}>
-          Enter Join Code
+        <button className= "btn btn-neutral text-sm" style={{marginRight: "212px", width: "120px"}} onClick={() => setJoinCode(true)}>
+          Join
         </button>
       </div>
       {joinCode && <joinCode close={() => setJoinCode(undefined)} />}
