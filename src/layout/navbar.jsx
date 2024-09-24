@@ -32,7 +32,7 @@ export default function Navbar() {
           </Link>
         </div>
         <button className= "btn btn-neutral text-sm" style={{marginRight: "212px", width: "120px"}} onClick={() => setJoinCode(true)}>
-          Join
+          Join/Create
         </button>
       </div>
       {joinCode && <joinCode close={() => setJoinCode(undefined)} />}

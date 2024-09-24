@@ -1,22 +1,22 @@
-.App {
+.App { 
   font-family: sans-serif;
   text-align: center;
 }
 
 .w-alot {
-  width: 800px;
+  width: "800px";
 }
 
 .w-side {
-  width: 350px;
-  height: 250px;
-  padding: 16px;
-  padding-top: 6px;
-  padding-left: 36px;
+  width: "350px";
+  height: "250px";
+  padding: "16px";
+  padding-top: "6px";
+  padding-left: "36px";
 }
 
 .table-1 {
-  width: 800px;
+  width: "800px";
 }
 
 .hv > tr:hover {
@@ -25,19 +25,19 @@
 }
 
 .Content {
-  margin: 5px 0 0 15px;
+  margin: "5px 0 0 15px";
 }
 
 .Header {
-  padding: 5px;
+  padding: "5px";
   background-color: #fcf8e3;
-  font-size: 25px;
+  font-size: "25px";
   font-weight: bold;
-  margin: 5px 0;
+  margin: "5px 0";
 }
 
 li:not(:last-child) {
-  margin-bottom: 4px;
+  margin-bottom: "4px";
 }
 
 .grad1 {
@@ -49,21 +49,25 @@ li:not(:last-child) {
 }
 
 .w-profile {
-  width: 500px;
+  width: "500px";
 }
 
 a[href^="https"] {
   color: cornflowerblue;
 }
 
-.tableRow {
+.tableRow { 
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
+  grid-template-columns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+} /*increase length*/
 
 .tableRow > th {
   text-align: center;
-  margin: 10px;
-  font-size: 20px;
+  margin: "10px";
+  font-size: "20px";
+}
+
+.block {
+  
 }

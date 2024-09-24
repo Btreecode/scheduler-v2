@@ -1,6 +1,11 @@
+import { Router, useNavigate } from "react-router-dom";
 import { DATES } from "../data/dates";
 
 export default function Index() {
+  const nav = useNavigate();
+  function toTimetable() {
+    nav("/timetable");
+  }
   return (
     <div className="flex flex-col gap-4">
       <div className="schedule">
@@ -21,6 +26,7 @@ export default function Index() {
           </tbody>
         </table>
       </div>
+      <button onClick={() => toTimetable()}>pop up table</button>
     </div>
   );
 }
