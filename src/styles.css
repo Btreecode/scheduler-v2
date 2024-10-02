@@ -56,18 +56,17 @@ a[href^="https"] {
   color: cornflowerblue;
 }
 
-.tableRow { 
-  display: grid;
+.tableRow {
   justify-content: space-between;
+  display: "grid";
   grid-template-columns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr";
+  width: "1000px";
+  border-color: "black";
+  border-width: "2px";
 } /*increase length*/
 
-.tableRow > th {
+.block {
   text-align: center;
   margin: "10px";
   font-size: "20px";
-}
-
-.block {
-  
 }
