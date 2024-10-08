@@ -68,6 +68,11 @@ a[href^="https"] {
 
 .block {
   text-align: center;
-  margin: "10px";
+  margin: 10px;
   font-size: "20px";
+}
+
+
+.heatmap > div{
+  border: 1px solid lightgray;
 }
