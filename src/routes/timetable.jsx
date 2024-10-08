@@ -7,6 +7,7 @@ export default function Timetable() {
     let [d, setD] = useState(new Date());
     return(
         <div className="flex flex-col flex-grow min-h-screen" style={{height: "1px"}}>
+            <div>Shared</div>
             <Schedule />
         </div>
     );
@@ -14,9 +15,10 @@ export default function Timetable() {
 
 function Schedule() {
     let [calendar, setCalendar] = useState(new Array(7).fill(0).map((_, i) => new Array(24).fill(false)));
+
     function toggleCell(day, time) {
         let temp = [...calendar];
-        temp[day][time] = !(temp[day][time]);
+        temp[day][time] = !temp[day][time];
         setCalendar(temp);
     }
     return (
@@ -40,5 +42,5 @@ function Column({ times, day, toggleCell}) {
 }
 
 function Cell({ available, toggleCell, day, index}) {
-    return <div onDragEnter={() => toggleCell(day, index)} className={`h-6 w-12 border ${available ? "bg-success" : ""} $`} />;
+    return <div onDragEnter={() => toggleCell(day, index)} className={`h-6 w-12 border ${available ? "bg-success" : ""}`} />;
 }
