@@ -1,6 +1,6 @@
 const PEOPLE = [
   { name: "Shrey", hours: 12 },
-  { name: "Min", hours: 11 },
+  { name: "Min", hours: 10 },
   { name: "Stanley", hours: 8 },
 ]
 
