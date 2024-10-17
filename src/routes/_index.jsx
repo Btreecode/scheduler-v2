@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Router, useNavigate } from "react-router-dom";
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const HOURS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const TIMES = new Array(24).fill(0).map((_, i) => i < 12 ? `${HOURS[i % 12]}:00 AM` : `${HOURS[i % 12]}:00 PM`);
@@ -13,8 +14,12 @@ const CALENDARS = [
 export default function Index() {
   let [calendar, setCalendar] = useState(new Array(7).fill(0).map((_, i) => new Array(24).fill(false)));
   let [myCalendar, setMyCalendar] = useState(undefined);
+  const nav = useNavigate();
   function toTimetable() {
     setMyCalendar(calendar);
+  }
+  function toHeatmap() {
+    nav("/heatmap");
   }
   let [d, setD] = useState(new Date());
   return (
@@ -23,7 +28,7 @@ export default function Index() {
         <Schedules myCalendar={myCalendar} /> : 
         <Schedule setMyCalendar={setMyCalendar} calendar={calendar} setCalendar={setCalendar}/>
       }
-      <button onClick={() => toTimetable()}>Confirm</button>
+      <button onClick={() => toHeatmap()}>Confirm</button>
     </div>
   );
 }
@@ -61,5 +66,5 @@ function Column({ times, day, toggleCell}) {
 }
 
 function Cell({ available, toggleCell, day, index}) {
-  return <div onDragEnter={() => toggleCell(day, index)} className={`h-6 w-12 border ${available ? "bg-success" : ""}`} />;
+  return <div onClick={() => toggleCell(day, index)} className={`h-6 w-12 border ${available ? "bg-success" : ""}`} />;
 }

@@ -28,7 +28,7 @@ function Available() {
         </thead>
         <tbody>
           {PEOPLE.map((people, i) => (
-            <tr key={i}>
+            <tr className="button" role="button" onClick={} key={i}>
               <td>{i + 1}</td>
               <td>{people.name}</td>
               <td>{people.hours} hrs</td>
