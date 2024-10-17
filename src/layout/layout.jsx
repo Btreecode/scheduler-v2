@@ -26,7 +26,7 @@ export default function Layout() {
           <Container>
             <Outlet />
           </Container>
-          <SideMenu />
+          
         </div>
         <Footer />
       </div>

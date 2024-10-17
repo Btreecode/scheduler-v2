@@ -1,10 +1,10 @@
 import { PEOPLE, TIMES } from "../data/leader-board";
 
-export default function SideMenu() {
+export default function SideMenu({ user, setUser }) {
   return (
     <div>
       <div className="bg-base-200 w-side">
-        <Available />
+        <Available user={user} setUser={setUser} />
       </div>
       <br />
       <div className="bg-base-200 w-side">
@@ -14,7 +14,7 @@ export default function SideMenu() {
   );
 }
 
-function Available() {
+function Available({ user, setUser }) {
   return (
     <div>
       <h1 className="font-bold text-xl mt-5 mb-2">Priorities</h1>
@@ -28,9 +28,9 @@ function Available() {
         </thead>
         <tbody>
           {PEOPLE.map((people, i) => (
-            <tr className="button" role="button" onClick={} key={i}>
+            <tr className="button" role="button" key={i} onClick={()=>{user == people.name ? setUser(undefined) : setUser(people.name)}}>
               <td>{i + 1}</td>
-              <td>{people.name}</td>
+              <td><div className={people.name === user ? "font-bold" : ""}>{people.name}</div></td>
               <td>{people.hours} hrs</td>
             </tr>
           ))}
