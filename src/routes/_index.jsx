@@ -1,26 +1,47 @@
-import { useState } from "react";
+import { Fragment, useContext, useState } from "react";
 import { Router, useNavigate } from "react-router-dom";
+import { AppContext} from "../layout/layout";
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const HOURS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const TIMES = new Array(24).fill(0).map((_, i) => i < 12 ? `${HOURS[i % 12]}:00 AM` : `${HOURS[i % 12]}:00 PM`);
 
-const CALENDARS = [
-  new Array(7).fill(0).map((_, i) => new Array(24).fill(Math.random() > 0.5 ? true : false)),
-  new Array(7).fill(0).map((_, i) => new Array(24).fill(Math.random() > 0.5 ? true : false)),
-  new Array(7).fill(0).map((_, i) => new Array(24).fill(Math.random() > 0.5 ? true : false)),
-  new Array(7).fill(0).map((_, i) => new Array(24).fill(Math.random() > 0.5 ? true : false))
-]
+export default function Timetable() {
+  let [d, setD] = useState(new Date());
+  return(
+    <div className="flex flex-col flex-grow min-h-screen" style={{height: "1px"}}>
+      <Schedule />
+    </div>
+  );
+}
 
-export default function Index() {
-  let [calendar, setCalendar] = useState(new Array(7).fill(0).map((_, i) => new Array(24).fill(false)));
-  let [myCalendar, setMyCalendar] = useState(undefined);
+function Schedule() {
   const nav = useNavigate();
-  function toTimetable() {
-    setMyCalendar(calendar);
+  let {heatmap, setHeatmap} = useContext(AppContext);
+
+  function toggle(day, time) {
+    if (heatmap.filter(v => v.day === day && v.time === time).length === 1) {
+      setHeatmap(heatmap.filter(v => v.day != day || v.time != time));
+    } else {
+      setHeatmap([...heatmap, {name: "david", day, time}]);
+    }
   }
-  function toHeatmap() {
-    nav("/heatmap");
-  }
+
+  return <div className="h-full w-full flex justify-center items-center">
+    <div className="flex flex-col pr-1">
+      {TIMES.map((time) => <div className="flex items-center justify-end text-xs h-6 select-none">{time}</div>)}
+    </div>
+    <div className="grid grid-cols-7 heatmap">{
+      new Array(24).fill(0).map((v, hr) => (<Fragment key={hr}>{
+        new Array(7).fill(0).map((v, day) => (
+          <div onClick={()=>toggle(day, hr)} className={`h-6 w-12 border ${heatmap.filter(v => v.day === day && v.time === hr).length === 1 ? "bg-success" : ""}`} key={day}></div>))
+      }</Fragment>))
+    }</div>
+    <button onClick={() => nav("/heatmap")}>click</button>
+  </div>
+}
+
+/**
+  export default function Index() {
   let [d, setD] = useState(new Date());
   return (
     <div className="flex flex-col flex-grow min-h-screen" style={{height: "1px"}}>
@@ -68,3 +89,5 @@ function Column({ times, day, toggleCell}) {
 function Cell({ available, toggleCell, day, index}) {
   return <div onClick={() => toggleCell(day, index)} className={`h-6 w-12 border ${available ? "bg-success" : ""}`} />;
 }
+
+ */

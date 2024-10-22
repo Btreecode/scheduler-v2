@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App { 
   font-family: sans-serif;
   text-align: center;
@@ -71,7 +75,6 @@ a[href^="https"] {
   margin: 10px;
   font-size: "20px";
 }
-
 
 .heatmap > div{
   border: 1px solid lightgray;
